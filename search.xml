@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[hexo 安装配置文档]]></title>
+      <url>https://jevics.github.io/2017/01/22/hexo/</url>
+      <content type="html"><![CDATA[<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ul>
+<li>node.js <a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载</a></li>
+<li>git<h2 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h2></li>
+</ul>
+<ol>
+<li>下载二进制包 node-v6.9.4-linux-x64.tar.xz<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># tar xf node-v6.9.4-linux-x64.tar.xz -C /usr/local/nodejs</span></div><div class="line"><span class="comment"># vim /etc/profile</span></div><div class="line"><span class="built_in">export</span> NODE_HOME=/usr/<span class="built_in">local</span>/nodejs</div><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$&#123;NODE_HOME&#125;</span>/bin</div><div class="line"><span class="comment"># source /etc/profile</span></div><div class="line"><span class="comment"># node --version</span></div><div class="line">v6.9.4</div><div class="line"><span class="comment"># npm --version</span></div><div class="line">3.10.10</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<a id="more"></a>
+<h2 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># npm install -g hexo-cli</span></div><div class="line"><span class="comment"># hexo --version</span></div><div class="line">hexo-cli: 1.0.2</div><div class="line">os: Linux 3.10.0-514.el7.x86_64 linux x64</div><div class="line">http_parser: 2.7.0</div><div class="line">node: 6.9.4</div><div class="line">v8: 5.1.281.89</div><div class="line">uv: 1.9.1</div><div class="line">zlib: 1.2.8</div><div class="line">ares: 1.10.1-DEV</div><div class="line">icu: 57.1</div><div class="line">modules: 48</div><div class="line">openssl: 1.0.2j</div></pre></td></tr></table></figure>
+<h2 id="配置hexo-站点"><a href="#配置hexo-站点" class="headerlink" title="配置hexo 站点"></a>配置hexo 站点</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># mkdir website</span></div><div class="line"><span class="comment"># hexo init website</span></div><div class="line"><span class="comment"># cd website</span></div><div class="line"><span class="comment"># ls</span></div><div class="line">_config.yml  node_modules  package.json  scaffolds  <span class="built_in">source</span>  themes</div><div class="line"><span class="comment"># npm install</span></div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
