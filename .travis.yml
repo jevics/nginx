@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - stable
+install:
+  - npm install -g hexo-cli
+script:
+  - hexo g
+after_success:
+  - cd ./public 
+  - git init
+  - git config user.name "jevics"
+  - git config user.email "zxf_668899@163.com"
+  - git add --all .
+  - git commit -m "Travis CI Auto Builder"
+  - git push --force https://$HEXO_GITHUB_TOKEN@github.com/jevics/jevics.github.io.git master
+branches:
+  only:
+    - blog
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
